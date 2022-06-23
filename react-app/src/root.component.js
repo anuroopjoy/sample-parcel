@@ -9,7 +9,16 @@ export default function Root(props) {
         customProp1="Parent prop1"
         wrapWith="h1"
         wrapStyle={{ color: "blue" }}
-        parcelDidMount={() => console.log("parcel mounted")}
+        handleError={err => console.log(err)}
+        parcelDidMount={() => console.log("React parcel mounted")}
+      />
+      <Parcel
+        config={() => System.import("@app/angular-parcel")}
+        customProp1="Parent prop1"
+        domElement={document.body}
+        wrapWith="h1"
+        wrapStyle={{ color: "green" }}
+        parcelDidMount={() => console.log("Angular parcel mounted")}
       />
       <div id="sample"></div>
     </section>
