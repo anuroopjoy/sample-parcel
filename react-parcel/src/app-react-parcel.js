@@ -13,5 +13,5 @@ const lifecycles = singleSpaReact({
   },
 });
 
-export const name = 'sample-parcel';
+export const name = 'react-parcel';
 export const { bootstrap, mount, unmount } = lifecycles;

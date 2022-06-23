@@ -14,8 +14,14 @@ export class AppComponent {
   async config() {
     return (window as any).System.import('@app/react-parcel');
   }
+  async ngconfig() {
+    return (window as any).System.import('@app/angular-parcel');
+  }
 
   parcelMounted():void {
     console.log('React parcel mounted');
+  }
+  ngparcelMounted():void {
+    console.log('Angular parcel mounted');
   }
 }

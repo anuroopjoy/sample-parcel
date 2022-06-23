@@ -331,9 +331,18 @@
   [mountParcel]="mountRootParcel"
   [customProps]="parcelProps"
   wrapWith="h1"
-  [appendTo]="target"
   [onParcelMount]="parcelMounted"
+  [appendTo]="target"
 ></parcel>
+
+<parcel
+  [config]="ngconfig"
+  [mountParcel]="mountRootParcel"
+  [customProps]="parcelProps"
+  wrapWith="h1"
+  [onParcelMount]="ngparcelMounted"
+  [appendTo]="target"
+  ></parcel>
 
 <div class="content" role="main">
   <!-- Highlight Card -->

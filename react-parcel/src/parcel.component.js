@@ -3,7 +3,7 @@ export default function ParcelComponent(props) {
     <section>
       Parcel component with {props.name} is mounted!
       <br />
-      Passed props from Parent{" "}
+      Passed props from Parent
       <div style={{ color: "red" }}>{props.customProp1}</div>
     </section>
   );
