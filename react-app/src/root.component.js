@@ -15,12 +15,11 @@ export default function Root(props) {
       <Parcel
         config={() => System.import("@app/angular-parcel")}
         customProp1="Parent prop1"
-        domElement={document.body}
         wrapWith="h1"
         wrapStyle={{ color: "green" }}
+        handleError={err => console.log(err)}
         parcelDidMount={() => console.log("Angular parcel mounted")}
       />
-      <div id="sample"></div>
     </section>
   );
 }
