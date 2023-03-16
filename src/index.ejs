@@ -17,7 +17,7 @@
     This CSP allows any SSL-enabled host and for arbitrary eval(), but you should limit these directives further to increase your app's security.
     Learn more about CSP policies at https://content-security-policy.com/#directive
   -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: localhost:*;img-src 'self' data:; script-src 'unsafe-inline' 'unsafe-eval' https: localhost:*; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none';">
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: localhost:*;img-src 'self' data:; script-src 'unsafe-inline' 'unsafe-eval' https: localhost:*; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none';"> -->
   <meta name="importmap-type" content="systemjs-importmap" />
   <!-- If you wish to turn off import-map-overrides for specific environments (prod), uncomment the line below -->
   <!-- More info at https://github.com/joeldenning/import-map-overrides/blob/master/docs/configuration.md#domain-list -->
@@ -53,7 +53,8 @@
         "@app/react-parcel": "//localhost:8080/app-react-parcel.js",
         "@app/react-app": "//localhost:8081/app-react-app.js",
         "@app/angular-app": "//localhost:4200/main.js",
-        "@app/angular-parcel": "//localhost:4201/main.js"
+        "@app/angular-parcel": "//localhost:4201/main.js",
+        "@app/vue-parcel": "//localhost:8082/js/app.js"
       }
     }
   </script>

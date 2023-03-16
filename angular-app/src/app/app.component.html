@@ -342,7 +342,16 @@
   wrapWith="h1"
   [onParcelMount]="ngparcelMounted"
   [appendTo]="target"
-  ></parcel>
+></parcel>
+
+<parcel
+  [config]="vueconfig"
+  [mountParcel]="mountRootParcel"
+  [customProps]="parcelProps"
+  wrapWith="h1"
+  [onParcelMount]="vueparcelMounted"
+  [appendTo]="target"
+></parcel>
 
 <div class="content" role="main">
   <!-- Highlight Card -->

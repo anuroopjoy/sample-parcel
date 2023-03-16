@@ -17,11 +17,17 @@ export class AppComponent {
   async ngconfig() {
     return (window as any).System.import('@app/angular-parcel');
   }
+  async vueconfig() {
+    return (window as any).System.import('@app/vue-parcel');
+  }
 
   parcelMounted():void {
     console.log('React parcel mounted');
   }
   ngparcelMounted():void {
     console.log('Angular parcel mounted');
+  }
+  vueparcelMounted():void {
+    console.log('Vue parcel mounted');
   }
 }
