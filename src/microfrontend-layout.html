@@ -17,11 +17,19 @@
 
   -->
 
-  <a href="#/angular">Go to Angular App</a>
+  <div>
+    <a href="#/angular">Go to Angular App</a>
+  </div>
+  <div>
+    <a href="#/vue">Go to Vue App</a>
+  </div>
 
   <main>
     <route path="angular">
       <application name="@app/angular-app"></application>
+    </route>
+    <route path="vue">
+      <application name="@app/vue-app"></application>
     </route>
     <route default>
       <application name="@app/react-app"></application>
