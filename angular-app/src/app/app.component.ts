@@ -21,13 +21,13 @@ export class AppComponent {
     return (window as any).System.import('@app/vue-parcel');
   }
 
-  parcelMounted():void {
+  parcelMounted(): void {
     console.log('React parcel mounted');
   }
-  ngparcelMounted():void {
+  ngparcelMounted(): void {
     console.log('Angular parcel mounted');
   }
-  vueparcelMounted():void {
+  vueparcelMounted(): void {
     console.log('Vue parcel mounted');
   }
 }
